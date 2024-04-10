@@ -12,6 +12,9 @@ log.txt
 .vscode/
 npm-debug.log*
 
+aws-secret.yaml
+env-secret.yaml
+
 .idea/
 .ionic/
 .sourcemaps/
