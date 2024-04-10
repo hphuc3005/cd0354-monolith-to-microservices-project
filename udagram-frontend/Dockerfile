@@ -1,12 +1,11 @@
 ### Build
-FROM node:14.15.0 as ionic
+FROM beevelop/ionic:update-ionic-6.16 AS ionic
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 RUN npm ci
-RUN npm install -g @ionic/cli@6
 ## Bundle app source
 COPY . .
 RUN ionic build
